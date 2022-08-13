@@ -1,0 +1,48 @@
+.Header{
+    &__container{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 200;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 50px;
+        background-color: transparent;
+        a{
+            color: white;
+        }
+        &__logo{
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+        &__menu{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        &__social{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            & img{
+                height: 24px;
+                width: 24px;
+                margin: 0px 10px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
